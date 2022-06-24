@@ -1,0 +1,26 @@
+export const EVENTS = {
+  connection: 'connection',
+  disconnect: 'disconnect',
+  CLIENT: {
+    USER_INFO: 'user-info',
+    CREATE_ROOM: 'create-room',
+    JOIN_ROOM: 'join-room',
+    LEFT_ROOM: 'left-room',
+    DELETE_ROOM: 'delete-room',
+    UPDATE_ROOM: 'update-room',
+    SEND_MESSAGE: 'send-message',
+    JOIN_PRIVATE_ROOM: 'join-private-room',
+    CHANGE_USER_STATUS: 'change-user-status',
+    USER_TYPING: 'user-typing',
+  },
+  SERVER: {
+    USER_ADDED: 'user-added',
+    ALL_ROOMS: 'all-rooms',
+    USER_JOINED_ROOM: 'user-joined-room',
+    USER_LEFT_ROOM: 'user-left-room',
+    ROOM_DELETED: 'room-deleted',
+    ALL_MESSAGES: 'all-messages',
+    ALL_USERS: 'all-users',
+    USER_TYPING: 'user-typing',
+  },
+};

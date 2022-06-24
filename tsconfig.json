@@ -13,8 +13,27 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "jsx": "preserve",
-    "incremental": true
+    "incremental": true,
+    "baseUrl": "./src",
+    "paths": {
+      "@/components/*": ["./common/components/*"],
+      "@/hooks/*": ["./common/hooks/*"],
+      "@/utils/*": ["./common/utils/*"],
+      "@/modules/*": ["./modules/*"],
+      "@/types/*": ["./common/@types/*"],
+      "@/features/*": ["./redux/features/*"],
+      "@/store": ["./redux/store/index"],
+      "@/config/*": ["./common/config/*"],
+      "@/context/*": ["./common/context/*"],
+      "@/models": ["./common/models/index"],
+      "@/models/*": ["./common/models/*"]
+    }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    "src/pages/api/auth/[...auth0].js"
+  ],
   "exclude": ["node_modules"]
 }
