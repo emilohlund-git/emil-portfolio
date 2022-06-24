@@ -31,7 +31,7 @@ const LoginForm = (props: Props) => {
                 </Title>
                 <Text color="dimmed" size="sm" align="center" mt={5}>
                     Do not have an account yet?{' '}
-                    <Link href="/register">
+                    <Link href="/auth/register">
                         <a className="text-sm hover:underline text-blue-500">Create account</a>
                     </Link>
                 </Text>
@@ -40,7 +40,7 @@ const LoginForm = (props: Props) => {
                     <PasswordInput value={password} onChange={(e) => setPassword(e.target.value)} label="Password" placeholder="Your password" required mt="md" />
                     <Group position="apart" mt="md">
                         <Checkbox label="Remember me" />
-                        <Link href="/forgot-password">
+                        <Link href="/auth/forgot-password">
                             <a className="text-sm hover:underline">Forgot password?</a>
                         </Link>
                     </Group>
