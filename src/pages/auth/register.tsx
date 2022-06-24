@@ -63,7 +63,7 @@ const Register: NextPage = (props: Props) => {
 
     const register = async () => {
         if (strength === 100) {
-            const response = await axios.post("http://localhost:4000/api/auth/register", {
+            const response = await axios.post(`${process.env.NEXT_PUBLIC_API_HOST!}/api/auth/register`, {
                 email,
                 password,
                 username,
